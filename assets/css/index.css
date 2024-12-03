@@ -1,0 +1,372 @@
+/* Cac set up chung */
+
+.logoImage {
+  width: 80px;
+  height: 80px;
+}
+
+/* Phan header */
+
+header {
+  width: 100%;
+  height: 110px;
+  background-color: var(--block-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 3px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Phan logo */
+.logoBox {
+  width: 20%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoBox div:first-child {
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoBox__details {
+  margin-left: 3px;
+}
+
+.logoBox__details h1 {
+  font-family: var(--bungee-font);
+  color: var(--block-color);
+  font-size: 20px;
+}
+
+.logoBox__details span {
+  display: inline-block;
+  margin-top: 5px;
+  font-family: var(--roboto-font);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#searchBox__subButton:hover {
+  background-color: rgb(225, 240, 254);
+  transform: scale(1.1);
+}
+
+/* Phan thanh tim kiem */
+.searchBox {
+  width: 30%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchBox form {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#searchRoom {
+  width: 80%;
+  height: 80%;
+  padding: 7px;
+  border: none;
+  border-radius: 20px;
+  font-family: var(--roboto-font);
+  font-size: 18px;
+}
+
+#searchRoom:focus {
+  outline: none;
+}
+
+#searchBox__subButton {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border-radius: 50%;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.fa-magnifying-glass {
+  font-size: 20px;
+}
+
+/* Phan dieu huong */
+.navBox {
+  width: 40%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.navBox ul {
+  width: 100%;
+  text-align: left;
+}
+
+.navBox li {
+  display: inline-block;
+  position: relative;
+}
+
+.navBox a {
+  display: block;
+  line-height: 45px;
+  padding: 0 14px;
+  text-decoration: none;
+  color: var(--block-color);
+  font-size: 16px;
+  background: white;
+  border-radius: 10px;
+}
+
+.navBox a strong {
+  font-weight: 700;
+}
+
+.navBox a:hover {
+  background-color: rgb(225, 240, 254);
+}
+
+.navBox ul.sub-menus {
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+  z-index: 99;
+  display: none;
+  border-radius: 10px;
+  box-shadow: 8px 8px 10px -5px rgba(0, 0, 0, 0.5);
+}
+
+.navBox ul.sub-menus li {
+  display: block;
+  text-align: left;
+  width: 110%;
+}
+
+.navBox ul.sub-menus a {
+  font-size: 16px;
+  border-radius: 0px;
+  color: black;
+  font-weight: 700;
+  background-color: #96b4d8;
+}
+
+.navBox li:hover ul.sub-menus {
+  display: block;
+}
+
+.navBox ul.sub-menus a:hover {
+  background-color: white;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Noi dung chinh */
+main {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Filter and List of house */
+.sectionWrapper {
+  width: 60%;
+  padding: 5px;
+}
+
+/* Phan loc tim kiem */
+.filterWrapper {
+  background-color: white;
+  width: 100%;
+  height: 40px;
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.filterWrapper ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filterWrapper ul li {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: var(--roboto-font);
+  margin: 0px 30px;
+  cursor: pointer;
+  width: 15%;
+  height: 90%;
+  background-color: #d8d5d3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.filterWrapper ul #quality {
+  width: 20%;
+}
+
+.filterWrapper ul li p {
+  margin-left: 10px;
+}
+
+.filterWrapper ul li:hover {
+  background-color: #d8d5d39b;
+}
+
+/* Danh sach nha thue */
+.sectionWrapper__homeList {
+  margin: 10px 0px;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+}
+
+.sectionWrapper__homeList__wrapper {
+  margin: 10px 0px;
+  display: flex;
+  width: 100%;
+  height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--element-color);
+}
+
+.sectionWrapper__homeList__wrapper:hover {
+  box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Picture of home */
+.sectionWrapper__homeList__imageHouse {
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  cursor: zoom-in;
+}
+
+.sectionWrapper__homeList__imageHouse img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* *Scope */
+.sectionWrapper__homeList__imageHouse .scopeImage {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: absolute;
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+}
+
+/* Thong tin chi tiết của nhà thue*/
+.sectionWrapper__homeList__detailsHouse {
+  width: 55%;
+  height: 100%;
+  align-content: space-around;
+}
+
+.detailsHome {
+  height: 70%;
+  font-family: var(--roboto-font);
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+.detailsHome a {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.detailsHome a:hover {
+  font-size: 23px;
+  color: var(--block-color);
+  text-decoration: underline var(--block-color);
+  text-decoration-thickness: 10%;
+  transition: 0.75s;
+}
+
+/* Thong tin chu nha */
+.interactionWrapper {
+  height: 20%;
+  padding: 0px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detailHomeOwner__img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.detailsHomeOwner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.interaction {
+  height: 80%;
+  width: 80px;
+  border-radius: 20px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.interaction p:first-child {
+  margin-right: 5px;
+}
+
+.fa-heart {
+  font-size: 22px;
+}
+
+.interaction:hover {
+  background-color: #d8d5d39b;
+}
+
+/* Don't known what to use right now. Probably */
+.articleWrapper {
+  width: 20%;
+}

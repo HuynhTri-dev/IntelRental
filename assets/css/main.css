@@ -1,0 +1,20 @@
+/* Bien mau */
+:root {
+  --block-color: #2d538c;
+  --element-color: #fefefd;
+  --modifer-color: #8da9c2;
+}
+
+/* Bien chu */
+:root {
+  /* --sans-font: "Noto Sans Display", sans-serif;
+  --mont-font: "Montserrat", sans-serif; */
+  --roboto-font: "Roboto", sans-serif;
+  --bungee-font: "Bungee", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: var(--roboto-font);
+}

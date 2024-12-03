@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link các icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- Link các file css -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+
+    <!-- Font chữ  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Script -->
+    <script src="./assets/javascript/zoom.js"></script>
+    <script src="./assets/javascript/interact.js"></script>
+    <title>IntelRental</title>
+  </head>
+  <body>
+    <!-- Thanh menu -->
+    <header>
+      <!-- Hop chua logo va thong tin -->
+      <!-- Chiem 20% -->
+      <div class="logoBox">
+        <div>
+          <img
+            src="./assets/img/logoTachNen.png"
+            alt="logo_tro"
+            class="logoImage"
+          />
+          <div class="logoBox__details">
+            <h1>IntelRental</h1>
+            <span>Quản lý thông minh, <br />tìm trọ nhanh chóng</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- thanh tim kiem -->
+      <!-- chiem 30% -->
+      <div class="searchBox">
+        <form action="">
+          <input
+            type="search"
+            id="searchRoom"
+            name="searchRoom"
+            placeholder="Tìm kiếm"
+          />
+          <button type="submit" id="searchBox__subButton">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+
+      <!-- Thanh dieu huong -->
+      <!-- Chiem 40% -->
+      <nav class="navBox">
+        <ul class="navList">
+          <li>
+            <a class="dropdown-arrow" href=""
+              ><i class="fa-solid fa-list"></i> <strong>Danh mục</strong></a
+            >
+            <ul class="sub-menus">
+              <li><a href="">Mua bán</a></li>
+              <li><a href="">Cho thuê </a></li>
+              <li><a href="">Dự án</a></li>
+              <li><a href="">Vay mua nhà</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-bell"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-envelope"></i></a>
+          </li>
+          <li>
+            <a href=""
+              ><i class="fa-solid fa-user"></i> <strong>Đăng nhập</strong></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><i class="fa-solid fa-pen"></i>
+              <strong>Đăng bài</strong>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Danh sach nha -->
+      <section class="sectionWrapper">
+        <!-- PHAN LOC TIM KIEM -->
+        <nav class="filterWrapper">
+          <ul>
+            <li id="location">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Vị trí</p>
+            </li>
+            <li id="quality">
+              <i class="fa-solid fa-star"></i>
+              <p>Chất lượng</p>
+            </li>
+            <li id="price">
+              <i class="fa-solid fa-money-bill"></i>
+              <p>Giá cả</p>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Danh sacg cac chuc nang loc tim kiem -->
+        <section>
+          <!-- Loc theo vi tri -->
+          <div>
+            <div>
+              <p>Tìm kiếm quanh bạn</p>
+              <i class="fa-solid fa-location-crosshairs"></i>
+            </div>
+            <input
+              type="search"
+              name="locate"
+              id="locate"
+              placeholder="Địa chỉ:"
+            />
+            <fieldset>
+              <legend>Tìm theo khu vực</legend>
+              <label for="city">Thành phố</label>
+              <input type="" name="" id="" />
+            </fieldset>
+          </div>
+          <!-- Loc theo tieu chi -->
+          <div></div>
+          <!-- Loc theo gia -->
+          <div></div>
+        </section>
+
+        <!-- Danh sach nha cua -->
+        <div class="sectionWrapper__homeList">
+          <!-- Nha so 1 -->
+          <div class="sectionWrapper__homeList__wrapper">
+            <div class="sectionWrapper__homeList__imageHouse">
+              <img src="./assets/img/BaiViet/BaiViet1.jpg" alt="anh nha" />
+              <div class="scopeImage" style="display: none"></div>
+            </div>
+            <div class="sectionWrapper__homeList__detailsHouse">
+              <div class="detailsHome">
+                <a href="#">Nhà siêu cấp vip pro</a>
+                <p>Tình trạng nhà: Còn trống</p>
+                <p>Ngày đăng: 10/09/2024</p>
+                <p>Địa chỉ: 100 Lê Lợi, Quận 1, TPHCM</p>
+              </div>
+              <div class="interactionWrapper">
+                <a href="#" class="detailsHomeOwner">
+                  <img
+                    class="detailHomeOwner__img"
+                    src="./assets/img/Users/user_id_001.jpg"
+                    alt="anhChu"
+                  />
+                  <p>Bà chủ</p>
+                </a>
+                <div class="interaction">
+                  <p>100</p>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nha so 2 -->
+          <div class="sectionWrapper__homeList__wrapper">
+            <div class="sectionWrapper__homeList__imageHouse">
+              <img src="./assets/img/BaiViet/BaiViet2.png" alt="anh nha" />
+              <div class="scopeImage" style="display: none"></div>
+            </div>
+            <div class="sectionWrapper__homeList__detailsHouse">
+              <div class="detailsHome">
+                <a href="#">Nha của người da trắng</a>
+                <p>Tình trạng nhà: Còn trống</p>
+                <p>Ngày đăng: 2/09/2024</p>
+                <p>Địa chỉ: Gò Vấp, TPHCM</p>
+              </div>
+              <div class="interactionWrapper">
+                <a href="#" class="detailsHomeOwner">
+                  <img
+                    class="detailHomeOwner__img"
+                    src="./assets/img/Users/user_id_002.png"
+                    alt="anhChu"
+                  />
+                  <p>Ông chủ</p>
+                </a>
+                <div class="interaction">
+                  <p>99</p>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quang cao -->
+      <article class="articleWrapper">
+        <div></div>
+      </article>
+    </main>
+
+    <!--   -->
+    <footer></footer>
+  </body>
+</html>
